@@ -1,8 +1,8 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
-import { checkRateLimit } from "@/lib/rateLimit";
-import { createSupabaseServerClient } from "@/lib/supabaseServer";
+import { checkRateLimit } from "../../../lib/rateLimit";
+import { createSupabaseServerClient } from "../../../lib/supabaseServer";
 
 export const runtime = 'edge'; // Optimise for Vercel Edge Functions
 
