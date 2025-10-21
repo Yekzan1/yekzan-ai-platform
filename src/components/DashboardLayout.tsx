@@ -1,3 +1,6 @@
+"use client";
+
+
 import { useAuth } from "@/_core/hooks/useAuth";
 import { useRouter, usePathname } from "next/navigation";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
