@@ -1,15 +1,12 @@
-"use client";
-
-
-import { useAuth } from "@/_core/hooks/useAuth";
+import { useAuth } from "../_core/hooks/useAuth";
 import { useRouter, usePathname } from "next/navigation";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "./ui/dropdown-menu";
 import {
   Sidebar,
   SidebarContent,
@@ -22,9 +19,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
   useSidebar,
-} from "@/components/ui/sidebar";
-import { APP_LOGO, APP_TITLE, getLoginUrl } from "@/const";
-import { useIsMobile } from "@/hooks/useMobile";
+} from "./ui/sidebar";
+import { APP_LOGO, APP_TITLE, getLoginUrl } from "../const";
+import { useIsMobile } from "../hooks/useMobile";
 import { LayoutDashboard, LogOut, PanelLeft, Users } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 
@@ -304,3 +301,4 @@ function DashboardLayoutContent({
     </>
   );
 }
+
