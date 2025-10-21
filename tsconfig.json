@@ -18,6 +18,11 @@
         "name": "next"
       }
     ],
+    
+    /* LIGNE MANQUANTE AJOUTÉE CI-DESSOUS */
+    "baseUrl": ".",
+    /* FIN DE L'AJOUT */
+
     "paths": {
       "@/*": ["./src/*"]
     }
