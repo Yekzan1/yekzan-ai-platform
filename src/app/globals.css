@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   /* CORRECTION : 
      La règle " * { @apply border-border; } " a été supprimée.
