@@ -1,8 +1,9 @@
-
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
-import { checkRateLimit } from "../../../lib/rateLimit";
-import { createSupabaseServerClient } from "../../../lib/supabaseServer";
+
+/* CORRECTION : Remplacement des chemins relatifs par des alias de chemin */
+import { checkRateLimit } from "@/lib/rateLimit";
+import { createSupabaseServerClient } from "@/lib/supabaseServer";
 
 export const runtime = 'edge'; // Optimise for Vercel Edge Functions
 
@@ -64,4 +65,3 @@ export async function POST(req: Request) {
     return new NextResponse("Internal Server Error", { status: 500 });
   }
 }
-
