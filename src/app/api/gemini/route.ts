@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 
+
 /* CORRECTION : Remplacement des chemins relatifs par des alias de chemin */
 import { checkRateLimit } from "@/lib/rateLimit";
 import { createSupabaseServerClient } from "@/lib/supabaseServer";
